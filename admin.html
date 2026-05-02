@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+      </nav>
+    </aside>
+
+    <section class="admin-content">
+      <div class="admin-topline">
+        <div>
+          <p class="eyebrow" id="mode-label">Демо-режим</p>
+          <h1>Панель управления</h1>
+        </div>
+        <button class="btn btn-secondary" id="logout">Выйти</button>
+      </div>
+
+      <div class="tab-content" id="dashboard">
+        <div class="admin-cards">
+          <article><span>5</span><p>Кейсов на сайте</p></article>
+          <article><span>3</span><p>Новые заявки</p></article>
+          <article><span>12</span><p>Редактируемых блоков</p></article>
+        </div>
+        <p class="admin-note">В демо-режиме изменения не сохраняются. В полной версии владелец сможет менять тексты, фото, порядок блоков и видеть заявки.</p>
+      </div>
+
+      <div class="tab-content hidden" id="cases">
+        <h2>Кейсы</h2>
+        <div id="admin-cases-list"></div>
+      </div>
+
+      <div class="tab-content hidden" id="requests">
+        <h2>Заявки</h2>
+        <div class="request-list">
+          <article><b>Анна</b><span>Салон красоты, нужна вывеска</span><em>Новая</em></article>
+          <article><b>Игорь</b><span>Пекарня, запуск доставки</span><em>В работе</em></article>
+          <article><b>Мария</b><span>Детский клуб, оформление входа</span><em>Новая</em></article>
+        </div>
+      </div>
+
+      <div class="tab-content hidden" id="blocks">
+        <h2>Блоки сайта</h2>
+        <div class="block-list">
+          <article>Главный экран <button>Редактировать</button></article>
+          <article>Услуги <button>Редактировать</button></article>
+          <article>FAQ <button>Редактировать</button></article>
+          <article>Отзывы <button>Редактировать</button></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/cases.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
