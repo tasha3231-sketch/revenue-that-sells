@@ -1,18 +1,28 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>РА Рекламные решения</title>
+  <title>РА Рекламные решения — реклама, которая приводит к результату</title>
+  <meta name="description" content="Дизайн, производство и монтаж рекламных решений под ключ: вывески, полиграфия, оформление пространств, бренд-материалы и наружная реклама." />
+
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/cases.css" />
 </head>
 <body>
   <header class="site-header">
-    <a href="#hero" class="logo" aria-label="РА Рекламные решения">
+    <a class="logo" href="#hero" aria-label="РА Рекламные решения">
       <span class="logo-mark">RA</span>
       <span class="logo-text">Рекламные решения</span>
     </a>
-    <nav class="nav">
+
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" aria-label="Основная навигация">
       <a href="#cases">Кейсы</a>
       <a href="#services">Услуги</a>
       <a href="#process">Как работаем</a>
@@ -20,18 +30,30 @@
       <a href="#faq">Вопросы</a>
       <a href="#contacts">Контакты</a>
     </nav>
-    <a href="#brief" class="header-cta">Обсудить проект</a>
+
+    <div class="header-actions">
+      <a class="header-admin" href="admin.html">Админка</a>
+      <a class="header-cta" href="#brief">Обсудить проект</a>
+    </div>
   </header>
 
   <main>
     <section class="hero" id="hero">
       <div class="hero-content reveal">
-        <p class="eyebrow">Рекламно-производственная компания</p>
-        <h1>Реклама и оформление, которые работают на <span>привлечение клиентов</span></h1>
-        <p class="hero-subtitle">Помогаем понять, что действительно нужно вашему бизнесу — и реализуем это под ключ, без лишних затрат.</p>
-        <p class="hero-note">От вывески до полной системы привлечения</p>
+        <p class="eyebrow">Дизайн • производство • монтаж</p>
+        <h1>
+          Реклама, которая не просто видна —
+          <span>она приводит к результату</span>
+        </h1>
+        <p class="hero-subtitle">
+          Помогаем бизнесу стать заметнее, понятнее и увереннее продавать:
+          от вывески и полиграфии до полной системы привлечения клиентов.
+        </p>
+        <p class="hero-note">
+          Разберём задачу, уберём лишнее и предложим решение, которое работает именно в вашей ситуации.
+        </p>
         <div class="hero-actions">
-          <a href="#quiz" class="btn btn-primary">Разобрать мою задачу</a>
+          <a href="quiz.html" class="btn btn-primary">Разобрать мою задачу</a>
           <a href="#cases" class="btn btn-secondary">Посмотреть кейсы</a>
         </div>
       </div>
@@ -40,29 +62,183 @@
     <section class="section pain-section reveal">
       <div class="section-head">
         <p class="eyebrow">С чем приходят</p>
-        <h2>Когда нужно не просто “что-то заказать”, а понять, что реально сработает</h2>
+        <h2>Когда нужен не список услуг, а понятное решение</h2>
       </div>
+
       <div class="pain-grid">
-        <article>Открываюсь, нужно быстро оформить и запуститься</article>
-        <article>Есть место, но его не замечают</article>
-        <article>Клиенты проходят мимо</article>
-        <article>Хочу обновить внешний вид без ремонта</article>
-        <article>Нужно понять, что из рекламы даст эффект</article>
-        <article>Хочу всё под ключ — без поиска разных подрядчиков</article>
+        <article>Открываемся и нужно быстро оформить фасад</article>
+        <article>Клиенты проходят мимо и не замечают вход</article>
+        <article>Нужно обновить старую вывеску без лишнего бюджета</article>
+        <article>Нужна полиграфия к запуску, акции или мероприятию</article>
+        <article>Нужно оформить витрину, офис, стенд или навигацию</article>
+        <article>Хотим всё под ключ: дизайн → производство → монтаж</article>
       </div>
     </section>
 
     <section class="section services-section reveal" id="services">
       <div class="section-head">
         <p class="eyebrow">Что делаем</p>
-        <h2>Собираем не список услуг, а решение под задачу бизнеса</h2>
+        <h2>Собираем рекламные продукты в систему</h2>
+        <p>
+          Не наваливаем всё подряд. Подбираем носители под задачу:
+          привлечь, объяснить, оформить, продать или запустить бизнес.
+        </p>
       </div>
+
       <div class="service-grid">
-        <article><h3>Чтобы вас заметили</h3><p>Вывески, наружная реклама, оформление витрин, световые короба.</p></article>
-        <article><h3>Чтобы вас поняли</h3><p>Навигация, таблички, входные группы, понятные информационные носители.</p></article>
-        <article><h3>Чтобы у вас покупали</h3><p>Полиграфия, меню, листовки, QR-связки, материалы для запуска и акций.</p></article>
-        <article><h3>Чтобы вас запомнили</h3><p>Фотозоны, неон, ростовые фигуры, брендирование транспорта и упаковки.</p></article>
+        <article>
+          <h3>Вывески и наружная реклама</h3>
+          <p>Вывески, световые короба, входные группы, билборды, штендеры, кронштейны.</p>
+        </article>
+        <article>
+          <h3>Полиграфия</h3>
+          <p>Визитки, листовки, буклеты, меню, каталоги, пластиковые карты, материалы для акций.</p>
+        </article>
+        <article>
+          <h3>Оформление пространства</h3>
+          <p>Витрины, стенды, таблички, интерьерная реклама, навигация, лайтбоксы.</p>
+        </article>
+        <article>
+          <h3>Бренд-материалы</h3>
+          <p>Упаковка, наклейки, баннеры, холсты, сувенирная продукция, брендирование транспорта.</p>
+        </article>
       </div>
     </section>
 
+    <section class="section quiz-preview reveal" id="quiz">
+      <div>
+        <p class="eyebrow">Мини-диагностика</p>
+        <h2>Не знаете, что заказать?</h2>
+        <p>
+          Ответьте на несколько вопросов — подскажем, с какого решения логичнее начать.
+        </p>
+      </div>
+      <a class="btn btn-primary" href="quiz.html">Пройти квиз</a>
+    </section>
+
+    <section class="section cases-section" id="cases">
+      <div class="section-head reveal">
+        <p class="eyebrow">Кейсы</p>
+        <h2>Показываем не просто работы, а ход решения</h2>
+        <p>
+          В каждом кейсе есть “до/после” со шторкой и аккордеон:
+          задача, решение, усиление, оптимизация и результат.
+        </p>
+      </div>
+
+      <div id="cases-container" class="cases-container"></div>
+    </section>
+
+    <section class="section why-section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Почему с нами проще</p>
+        <h2>Один подрядчик вместо пяти</h2>
+      </div>
+
+      <div class="why-grid">
+        <article>Поможем выбрать материал и формат</article>
+        <article>Сами произведём и смонтируем</article>
+        <article>Согласуем макет перед запуском</article>
+        <article>Подскажем, где можно сэкономить без потери вида</article>
+        <article>Работаем с разовыми и регулярными заказами</article>
+        <article>Собираем решение под задачу, а не “что подороже”</article>
+      </div>
+    </section>
+
+    <section class="section process-section reveal" id="process">
+      <div class="section-head">
+        <p class="eyebrow">Процесс</p>
+        <h2>Спокойно, понятно, по шагам</h2>
+      </div>
+
+      <div class="process-grid">
+        <article><span>01</span><h3>Разбираем задачу</h3></article>
+        <article><span>02</span><h3>Предлагаем формат</h3></article>
+        <article><span>03</span><h3>Считаем стоимость</h3></article>
+        <article><span>04</span><h3>Готовим макет</h3></article>
+        <article><span>05</span><h3>Производим</h3></article>
+        <article><span>06</span><h3>Доставляем / монтируем</h3></article>
+      </div>
+    </section>
+
+    <section class="section reviews-section reveal" id="reviews">
+      <div class="section-head">
+        <p class="eyebrow">Отзывы</p>
+        <h2>Клиенты ценят, когда понятно и без хаоса</h2>
+        <p>Пока без фото — для презентационной версии важнее показать широту задач и разные сферы бизнеса.</p>
+      </div>
+      <div id="reviews-container" class="reviews-grid"></div>
+    </section>
+
+    <section class="section faq-section reveal" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">Вопросы</p>
+        <h2>Что обычно спрашивают перед стартом</h2>
+      </div>
+      <div id="faq-container" class="faq-list"></div>
+    </section>
+
+    <section class="section brief-section reveal" id="brief">
+      <div class="brief-card">
+        <div>
+          <p class="eyebrow">Быстрый расчёт</p>
+          <h2>Пришлите задачу — подскажем, с чего начать</h2>
+          <p>
+            Опишите, что нужно сделать. Можно приложить фото места, пример или файл макета.
+          </p>
+        </div>
+
+        <form class="brief-form" id="brief-form">
+          <input type="text" name="name" placeholder="Имя" required />
+          <input type="text" name="contact" placeholder="Телефон / Telegram" required />
+          <textarea name="task" placeholder="Что нужно сделать?" required></textarea>
+          <select name="layout">
+            <option value="">Есть ли готовый макет?</option>
+            <option>Да, есть</option>
+            <option>Нет, нужен дизайн</option>
+            <option>Есть идея, нужно доработать</option>
+          </select>
+          <input type="text" name="place" placeholder="Где будет размещаться реклама?" />
+          <input type="text" name="deadline" placeholder="Примерный срок" />
+
+          <label class="consent-check">
+            <input type="checkbox" required />
+            <span>
+              Я соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a>
+              и <a href="consent.html">обработкой персональных данных</a>
+            </span>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Получить расчёт</button>
+          <p class="form-note" id="form-note">
+            Демо-форма: заявка покажет уведомление, backend подключается отдельно.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="final-section reveal" id="contacts">
+      <h2>Не знаете, с чего начать — пришлите задачу</h2>
+      <p>
+        Мы посмотрим, что нужно именно в вашем случае:
+        вывеска, печать, оформление точки или комплект материалов.
+      </p>
+      <a href="#brief" class="btn btn-primary">Обсудить проект</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© РА Рекламные решения</p>
+    <div class="footer-links">
+      <a href="admin.html">Админка</a>
+      <a href="quiz.html">Квиз</a>
+      <a href="offer.html">Оферта</a>
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="consent.html">Согласие на обработку данных</a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/cases.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
 </html>

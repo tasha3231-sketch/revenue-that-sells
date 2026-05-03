@@ -1,21 +1,71 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Квиз — РА Рекламные решения</title>
+  <meta name="description" content="Мини-диагностика для выбора рекламного решения: фасад, витрина, полиграфия, навигация, наружная реклама или комплекс под ключ." />
+
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/quiz.css" />
 </head>
-<body>
+<body class="quiz-body">
+  <header class="site-header quiz-header">
+    <a class="logo" href="index.html" aria-label="РА Рекламные решения">
+      <span class="logo-mark">RA</span>
+      <span class="logo-text">Рекламные решения</span>
+    </a>
+
+    <div class="header-actions">
+      <a class="header-admin" href="admin.html">Админка</a>
+      <a class="header-cta" href="index.html#brief">Обсудить проект</a>
+    </div>
+  </header>
+
   <main class="quiz-page">
-    <section class="quiz-card">
-      <a href="index.html" class="back-link">← На сайт</a>
-      <p class="eyebrow">Мини-диагностика</p>
-      <h1>Не знаете, что именно нужно?</h1>
-      <p>Ответьте на 3 вопроса — подскажем, с чего логичнее начать.</p>
-      <div id="quiz-box"></div>
+    <section class="quiz-shell reveal visible">
+      <a class="back-link" href="index.html">← Вернуться на сайт</a>
+
+      <div class="quiz-intro" id="quiz-intro">
+        <p class="eyebrow">Мини-диагностика</p>
+        <h1>Не знаете, что именно нужно для рекламы?</h1>
+        <p>
+          Ответьте на несколько вопросов — мы подскажем, с какого решения логичнее начать:
+          вывеска, витрина, QR-связка, полиграфия, навигация или комплекс под ключ.
+        </p>
+        <button class="btn btn-primary" id="start-quiz" type="button">Начать диагностику</button>
+      </div>
+
+      <div class="quiz-card hidden" id="quiz-card">
+        <div class="quiz-progress">
+          <span id="quiz-step-text">Вопрос 1 из 4</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+
+        <div id="quiz-content"></div>
+      </div>
+
+      <div class="quiz-result hidden" id="quiz-result">
+        <p class="eyebrow">Предварительная рекомендация</p>
+        <h2 id="result-title">Начать с разбора задачи</h2>
+        <p id="result-text"></p>
+
+        <div class="result-list" id="result-list"></div>
+
+        <div class="quiz-actions">
+          <a href="index.html#brief" class="btn btn-primary">Получить расчёт</a>
+          <button type="button" class="btn btn-secondary" id="restart-quiz">Пройти ещё раз</button>
+        </div>
+
+        <p class="quiz-note">
+          Это демо-диагностика. Финальное решение зависит от места размещения, сроков, бюджета и материалов.
+        </p>
+      </div>
     </section>
   </main>
-  <script src="js/quiz.js"></script>
+
+  <script type="module" src="js/quiz.js"></script>
 </body>
 </html>
